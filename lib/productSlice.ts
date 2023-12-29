@@ -33,7 +33,7 @@ export const getGrupList = createAsyncThunk(
 
 export const getUrunList = createAsyncThunk(
   "product/getUrunList",
-  async (grupId, thunkAPI) => {
+  async (grupId: number, thunkAPI) => {
     const response = await customFetch.post(
       "/public/customerUrun/list",
       { paket_grup_id: grupId },
