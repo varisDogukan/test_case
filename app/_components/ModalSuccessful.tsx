@@ -12,7 +12,7 @@ function ModalSuccessful() {
   }
 
   return (
-    <div className="modal__revoke">
+    <div className="modal__successfull">
       <div className="modal__img-box modal__img-box--green">
         <img src="/check-circle.svg" alt="alert icon" />
       </div>
