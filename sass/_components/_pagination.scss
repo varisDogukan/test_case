@@ -1,0 +1,61 @@
+.pagination {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+
+  div {
+    display: flex;
+    align-items: center;
+    color: #667085;
+
+    &:first-child {
+      gap: 10px;
+    }
+  }
+
+  select {
+    color: inherit;
+    border: 1px solid #d0d5dd;
+    width: 105px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  &__button {
+    font-weight: 500;
+
+    &__number {
+      border: 1px solid #d0d5dd;
+      border-right: none;
+      padding: 10px 8px;
+    }
+
+    &__first,
+    &__last {
+      padding: 10px 16px;
+      border: 1px solid #d0d5dd;
+      display: flex;
+      gap: 8px;
+
+      img {
+        filter: invert(0%) sepia(1%) saturate(7491%) hue-rotate(85deg)
+          brightness(98%) contrast(95%);
+      }
+    }
+
+    &__first {
+      border-radius: 8px 0 0 8px;
+      border-right: none;
+    }
+
+    &__last {
+      border-radius: 0 8px 8px 0;
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
